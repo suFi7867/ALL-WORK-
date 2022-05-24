@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS COMBINATORS CARDS</title>
+
+    <style>
+
+        #BIG{
+            
+            height: 720px; width: 1000px; margin: auto;
+            background-color: whitesmoke;
+
+        }
+
+        #BIG > div {
+            height: 46%;
+            width: 96%; margin: auto; display: flex;
+            margin-top: 15px; margin-right: 18px;
+        }
+
+        #BIG > div > div{
+             height: 100%;
+            width: 96%; margin: auto; 
+            background-color: white;
+        }
+
+        #BIG >  div> div:nth-child(2)  {
+        margin: 0px 20px 0px 20px ;
+      }
+
+      #BIG > div > div > img{
+            height: 50%;
+            width: 100%; margin: auto; 
+        }
+
+        #BIG > div > div > h2{
+            font-family: Arial, Helvetica, sans-serif; margin-top: 15px;
+            margin-left: 10px; text-align: left;   
+        }
+
+        #BIG > div > div > h2 + span {
+            font-family: Arial, Helvetica, sans-serif; color: red;
+            margin-left: 10px; text-align: left; 
+            font-size: large; font-weight: bold; 
+        }
+
+        #BIG > div > div > h2 + span + span {
+            font-family: Arial, Helvetica, sans-serif; font-size: large;
+            margin-left: 10px; text-align: left; 
+            color: grey; font-weight: bold;
+        }
+
+        
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+    </style>
+
+
+
+</head>
+
+<div id="BIG">
+
+    <!-- big one -->
+    <div>
+        <!-- 1 -->
+        <div>
+            <img src="https://i.pinimg.com/originals/f3/30/5e/f3305e0ec42ab27f3bb3b5f325128d91.jpg">
+            <h2> Lorem ipsum dolor sit, amet consectetur adipisicing .</h2>
+            <span >l</span>
+            <span> GOD OF WAR</span>
+        </div>
+        <!-- 2 -->
+        <div>
+            <img src="https://wallpaperaccess.com/full/2086790.jpg">
+            <h2> 20 LAKH PACKAGE Barish Kab Ayengi Aspiring Developr .</h2>
+            <span >l</span>
+            <span> CALL OF DUTY</span>
+        </div>
+        <!-- 3 -->
+        <div>
+            <img src="https://wallpaperaccess.com/full/2086790.jpg">
+            <h2> 20 LAKH PACKAGE Barish Kab Ayengi Aspiring Developr .</h2>
+            <span >l</span>
+            <span>Assasian Creed</span>
+        </div>
+    </div>
+
+    <!-- big one -->
+    <div>
+        <!-- 1 -->
+        <div>
+            <img src="https://cdn.wallpapersafari.com/57/90/BRi1qC.jpg">
+            <h2> Lorem ipsum dolor sit, amet consectetur adipisicing .</h2>
+            <span >l</span>
+            <span> GOD OF WAR</span>
+        </div>
+        <!-- 2 -->
+        <div>
+            <img src="https://i.pinimg.com/originals/05/dd/c9/05ddc9513f63b165a2249a75aa54950a.jpg">
+            <h2> 20 LAKH PACKAGE Barish Kab Ayengi Aspiring Developr .</h2>
+            <span >l</span>
+            <span> CALL OF DUTY</span>
+        </div>
+        <!-- 3 -->
+        <div>
+            <img src="https://www.hdwallpapers.in/download/red_hood_gotham_knights_4k_hd_games-3840x2160.jpg">
+            <h2> 20 LAKH PACKAGE Barish Kab Ayengi Aspiring Developr .</h2>
+            <span >l</span>
+            <span>Assasian Creed</span>
+        </div>
+    </div>
+
+   
+
+</div>
+
+
+
+
+
+    
+</body>
+</html>

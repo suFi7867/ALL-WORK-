@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALC GRID</title>
+    <style>
+        h1{
+            text-align: center;
+            color: teal;
+        }
+
+        #calc{
+            height: 500px;
+            width: 400px;
+            border: 1px solid transparent;
+            margin: auto;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.15) 0px 3px 6px;
+           
+        }
+
+        #display{
+        border: 1px solid transparent;
+          height: 10%;
+          width: 85%;
+          margin: auto;
+          margin-top: 30px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.15) 0px 3px 6px;
+          border-radius: 10px;
+          
+
+        }
+
+        #key{
+            width: 89%;
+            height: 75%;
+            margin: auto;
+            margin-top: 20px;
+            border: 1px solid transparent;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(4,1fr);
+            justify-content: center;
+            align-items: center;
+           
+        }
+        #key>div{
+            display: grid;
+            height: 85%; width: 80%;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 30px;
+            font-weight: bolder;
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.15) 0px 3px 6px;
+
+        }
+
+        #key>div:hover{
+            background-color: blueviolet;
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Masai Calculator</h1>
+
+    <div id="calc">
+        <div id="display"></div>
+        <div id="key">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>+</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>-</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>X</div>
+            <div>C</div>
+            <div>0</div>
+            <div>=</div>
+            <div>/</div>
+        </div>
+
+
+    </div>
+
+    
+</body>
+</html>

@@ -6,36 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .box{
-            display: flex;
-            border: 3px solid red;
+        #box{
+        
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 150px 150px;
+            grid-template-areas: ;
+           padding: 20px;
+           background-color: rgb(255, 237, 237);
            
+           gap: 20px 50px
+          
+          
 
         }
 
-        .box > div{
+        #box > div{
             
-            height: 30px;
-            width: 30px;
+            padding: 20px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            gap: 20px
+            
             
 
         }
 
-        .box > div:first-child{
+        #box > div:first-child{
             background-color: aqua;
-            flex-grow: 1;
+            grid-area: aq;
+            
         }
-        .box > div:nth-child(2){
-            background-color: salmon;
-            flex-grow: 3;
+        #box > div:nth-child(2){
+            background-color: rgb(50, 70, 255);
+            grid-area: bl;
         }
-        .box > div:nth-child(3){
+        #box > div:nth-child(3){
             background-color: palegoldenrod;
-        flex-grow: 1;
+            grid-area: pal;
+        }
+        #box > div:nth-child(4){
+            background-color: rgb(242, 65, 255);
+            grid-area: pin;
+        }
+        #box > div:nth-child(5){
+            background-color: rgb(221, 126, 59);
+            grid-area: lis;
+        }
+        #box > div:nth-child(6){
+            background-color: rgb(138, 10, 10);
+            grid-area: bro;
         }
      
-
-
 
 
     </style>
@@ -45,14 +68,20 @@
 
 </head>
 <body>
+    <div>
 
-    <div class="box">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
         
+        <div id="box">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            
+            
+        </div>
         
     </div>
-    
 </body>
 </html>

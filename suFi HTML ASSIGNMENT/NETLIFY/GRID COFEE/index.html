@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID COFEE</title>
+    <style>
+        #BIG{
+            padding: 20px;
+            background-color: #f5f8ef;
+            margin: auto;
+
+        }
+
+        #container{
+            display: grid;
+            width: 1400px;
+            border: 1px solid transparent;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3, 200px);
+            gap: 30px;
+            margin: auto; 
+            margin-top: 150px;
+            margin-bottom: 150px;
+        }
+
+        #container > div{
+            display: grid;           
+            border: 1px solid transparent;
+            border-radius: 10px;
+            justify-content: center;
+            align-content: space-around;
+            box-shadow: #a9c539 0px 6px 12px -2px, #d2ff1d 0px 3px 7px -3px;
+            background-color: white;
+        }
+
+        #container > div > div {
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 40px;
+        }
+        #container > div > div > h2  {
+            font-family: sans-serif; font-weight: bolder; font-size: 30px; 
+            
+        }
+        #container > div > div > h2 + p  {
+            font-family: sans-serif; font-weight: bolder; font-size: larger; color: #afd613; font-size: 25px; 
+
+        }
+
+        #container > div > div + div >  p  {
+            font-family: sans-serif; color: rgb(161, 161, 161); font-size: 20px; 
+            padding-top: -50px;
+        }
+
+        #container > div:hover{
+            background-color: #412900; 
+
+        }
+
+        #container > div:hover{
+            background-color: #264100; 
+            color: white;
+    
+        }
+
+       
+
+        
+            
+        
+
+
+
+    </style>
+
+
+</head>
+<body>
+    <div id="BIG">
+    <div id="container">
+
+        <div>
+            <div> <h2>Cappuccino</h2> 
+                <p>49 $</p></div>
+            <div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti facere !</p>
+            </div>
+        </div>
+        <div>
+            <div> <h2>Cappuccino</h2> 
+                <p>49 $</p></div>
+            <div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti facere !</p>
+            </div>
+        </div>
+        <div>
+            <div> <h2>Cappuccino</h2> 
+                <p>49 $</p></div>
+            <div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti facere !</p>
+            </div>
+        </div>
+        <div>
+            <div> <h2>Cappuccino</h2> 
+                <p>49 $</p></div>
+            <div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti facere !</p>
+            </div>
+        </div>
+        <div>
+            <div> <h2>Cappuccino</h2> 
+                <p>49 $</p></div>
+            <div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti facere !</p>
+            </div>
+        </div>
+        <div>
+            <div> <h2>Cappuccino</h2> 
+                <p>49 $</p></div>
+            <div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti facere !</p>
+            </div>
+        </div>
+        <div>
+            <div> <h2>Cappuccino</h2> 
+                <p>49 $</p></div>
+            <div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti facere !</p>
+            </div>
+        </div>
+        <div>
+            <div> <h2>Cappuccino</h2> 
+                <p>49 $</p></div>
+            <div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti facere !</p>
+            </div>
+        </div>
+        <div>
+            <div> <h2>Cappuccino</h2> 
+                <p>49 $</p></div>
+            <div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti facere !</p>
+            </div>
+        </div>
+
+        
+
+
+    </div>
+    </div>
+</body>
+</html>

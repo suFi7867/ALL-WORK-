@@ -5,15 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MASAI NAVBAR</title>
+    
     <style>
         #NAV{
            width: 100%; 
-           border: 1px solid red;
+ 
            display: flex;
+           justify-content: space-evenly;
+           align-items: center;
         }
-        #NAV > div + div {
+
+        #NAV > div:nth-child(1){
+            width: 10%; 
+           height: 100%;
+          
+        }
+
+        #NAV > div:nth-child(2){
+            width: 70%; 
+           height: 100%;
+           
+           display: flex;
+           justify-content: space-around;
+
+        }
+
+        #NAV > div {
             display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+            
         }
+
+        p + div{
+            display: flex;
+            background-color: #f2fdff;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 20px;
+            border-radius: 20px;
+
+        }
+
+        p+div>img{
+            width: 20px; 
+            height: 20px;
+            margin-left: 25px;
+        
+        }
+
+        select{
+            border: 0px;
+        }
+
+        p+div+button{
+            padding: 5px 20px;
+            border-color: rgb(255, 0, 47);
+            background-color: white;
+            border-radius: 5px;
+        }
+
+
 
     </style>
 
@@ -29,6 +82,9 @@
         <div>
             <select>
                 <option value="">Source</option>
+                <option value="">FULL TIME</option>
+                <option value="">PART TIME</option>
+               
             </select>
             <p>fees & isa</p>
             <p> about us</p>
@@ -39,7 +95,7 @@
                 <p>refer & earn</p>
                 <img src="https://www.masaischool.com/img/referral/hand.png" alt="error">
             </div>
-            <button></button>
+            <button>Login</button>
         </div>
     </div>
 

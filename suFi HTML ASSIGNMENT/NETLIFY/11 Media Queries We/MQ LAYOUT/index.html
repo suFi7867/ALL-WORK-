@@ -6,86 +6,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #nav{
-         background-color: yellow;
-         width: 100%; height: 80px;
-         font-size: 30px;
-        }
+      
+       
 
-        #big{
-            display: grid;
-            grid-template-columns: repeat(4,1fr);
-            grid-template-rows: 300px;
-            gap: 20px;
-            margin-top: 30px;
-        }
-
-        #big>div{
+        #BIG>div{
+            display: flex;
             font-size: 30px;
+            justify-content: center;
+            align-items: center;
+
         }
 
-        #big > div:nth-child(1){
+        #BIG  > div:nth-child(2){
             background-color: red;
+            grid-template-rows: auto;
+            grid-area: b1;
         }
-        #big > div:nth-child(2){
+        #BIG  > div:nth-child(3){
             background-color: green;
+            grid-template-rows: auto;
+            grid-area: b2;
         }
-        #big > div:nth-child(3){
+        #BIG > div:nth-child(4){
             background-color: blue;
+            grid-template-rows: auto;
+            grid-area: b3;
         }
-        #big > div:nth-child(4){
+        #BIG  > div:nth-child(5){
             background-color: goldenrod;
+            grid-template-rows: auto;
+            grid-area: b4;
+        }
+
+        #nav{
+            background-color: yellow;
+            width: 100%;
+            height: 80px;
+            font-size: 30px;
+            grid-area: nav;
+        }
+
+
+        #BIG{
+            display: grid;
+            grid-template-columns: repeat(4,fr);
+            grid-template-rows: 80px 300px; 
+            gap: 20px;
+            grid-template-areas: 
+            "nav nav nav nav "
+            "b1 b2 b3 b4";
+             
         }
 
 
         /* medium screen */
         @media all  and (min-width:480px) and (max-width:720px){
-
             
-            #big{
-                display: grid;
-                grid-template-columns: repeat(2,1fr);
-                grid-template-rows: repeat(2,300px);   
-            }
-            #big > div:nth-child(1){
-                order: ;
-            }
-            #big > div:nth-child(2){
-               
-            }
-            #big > div:nth-child(3){
-               
-            }
-            #big > div:nth-child(4){
-              
-            }
-
-
+            #BIG{
+            grid-template-columns: repeat(2,fr);
+            grid-template-rows: 80px 300px 300px; 
+            grid-template-areas: 
+            "nav nav"
+            "b1 b3"
+            "b2 b4";
+            }  
         }
             
         /* small screen */
         @media all  and (min-width:320px) and (max-width:479px){
-            #big{
-                display: grid;
-                grid-template-columns: repeat(1,1fr);
-                grid-template-rows: repeat(4,300px);   
-            }
-            #big > div:nth-child(1){
-                order: ;
-            }
-            #big > div:nth-child(2){
-               
-            }
-            #big > div:nth-child(3){
-               
-            }
-            #big > div:nth-child(4){
-              
-            }
-
+           
+            #BIG{
+            grid-template-columns: repeat(1,fr);
+            grid-template-rows: 80px 300px 300px 300px 300px; 
+            grid-template-areas: 
+            "nav"
+            "b1"
+            "b4"
+            "b2"
+            "b3";
             
-            
-
+            }
         }
 
 
@@ -96,15 +96,17 @@
 
 </head>
 <body>
-
-    <div id="nav"> NAVIGATION</div>
-
-    <div id="big">
+    <div id="BIG">
+        
+        <div id="nav">NAVIGATION</div>
+    
         <div>BOX 1</div>
         <div>BOX 2</div>
         <div>BOX 3</div>
         <div>BOX 4</div>
+ 
     </div>
+   
     
 </body>
 </html>

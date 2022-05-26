@@ -6,34 +6,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-         #heading > h1{
-        width: 420px; text-align: center; margin: auto; font-weight: 10000;    
-      }
 
-      #heading > p{
-        width: 450px; text-align: center; margin: auto;   color: grey; line-height: 20px; margin-top: 10px;
-      }
+      
 
-      #cards-section{
+
+        #heading  {
+        text-align: center; 
+        margin: auto; width: 40%;
+        font-family: 'Times New Roman', Times, serif;   
+        }
+
+        #heading > h1 {
+        font-size: 40px;
+        }
+
+        #heading > p {
+        font-size: 20px; line-height: 22px; color: grey;
+        }
+
+        #cards-section{
+          border: 1px red;
           display: grid;
-          width: 70%;
-          margin: auto;
-          grid-template-columns: repeat(3,1fr);
-          grid-template-rows: auto;
+          width: 60%;    
+          margin: auto; 
+          grid-template-columns: repeat(3,1fr); 
+          grid-template-rows: auto; 
+          gap: 20px;   
+          margin-top: 50px;
+
+        }
+
+        #cards-section > div{
+          text-align: center; border-radius: 20px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          padding: 20px;
+        }
+
+        h2 + h1 + p{
+          font-style: italic;
+          margin-top: -20px;
+        }
+
+        #cards-section > div:nth-child(1) > h1 {
+        color: green;
       }
-      #cards-section div{
-        border: 1px solid transparent;
-        width: 30%; height: 100%;
-        margin: auto; border-radius: 20px;
-        text-align: center;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+      #cards-section > div:last-child > h1 {
+        color: blue;
       }
+
+      #cards-section > div:nth-child(2) > h1 {
+        color: orange;
+      }
+
+      button{
+          padding: 15px 45px 15px 45px;
+           font-size: 25px; font-weight: bold;
+           border-radius: 7px; border: 1px solid #007aff; color: #007aff; margin-top: 20px;}
+
+      /* medium screen */
+      @media all  and (min-width:480px) and (max-width:720px){
+          #cards-section{
+                width: 90%;    
+                grid-template-columns: repeat(2,1fr); 
+                grid-template-rows: repeat(2,auto); 
+                margin-top: 50px;
+
+              } 
+         #heading  {
+              
+               width: 100%;
+              font-size: 30px;   
+              }
+
+           
+      }
+            
+        /* small screen */
+        @media all  and (min-width:320px) and (max-width:479px){
+           #cards-section{
+               width: 95%;    
+               grid-template-columns: repeat(1,1fr); 
+               grid-template-rows: repeat(3,auto); 
+               margin-top: 50px;
+
+             } 
+           #heading  {
+             
+              width: 100%;
+             font-size: 20px;   
+             }
+          
+        }
 
 
 
     </style>
+
 </head>
+
 <body>
+ 
+
     <div id="heading">
         <h1>Choose a plan that right for your business</h1>
         <p>
@@ -80,6 +154,6 @@
 
 
 
-    
+  
 </body>
 </html>

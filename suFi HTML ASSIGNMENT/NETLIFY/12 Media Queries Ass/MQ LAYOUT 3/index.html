@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MQ LAYOUT-2</title>
+
+  <style>
+  
+
+#big{
+  border: 1px solid;
+   display: grid;
+   grid-template-columns:repeat(3,1fr) ;
+   grid-template-rows:80px 200px 200px 200px ;
+   gap: 20px;
+   grid-template-areas: 
+   "nav nav nav"
+   "left left box1"
+   "left left box2"
+   "left left box3";
+ }
+
+ #nav{
+    background-color: yellow;
+    grid-area: nav;
+  }
+
+#big>div:nth-child(2){
+  background-color:red;
+  grid-area: left;
+
+  }
+#big>div:nth-child(3){
+  background-color:green; 
+  grid-area: box1;
+  }
+
+  #big>div:nth-child(4){
+  background-color:green; 
+  grid-area: box2;
+  }
+  
+
+  #big>div:nth-child(5){
+  background-color:green;
+  grid-area: box3; 
+  }
+  
+ /* medium */
+ @media screen and (min-width:480px) and (max-width:720px){
+  #big{
+
+   grid-template-columns:repeat(3,1fr) ;
+   grid-template-rows:80px 200px 200px 200px ;
+  
+   grid-template-areas: 
+   "nav nav nav"
+   "left left left"
+   "left left left"
+   "box1 box2 box3";
+   
+ }
+}
+
+
+ /* small */
+ @media screen and (min-width:320px) and (max-width:479px){
+  #big{
+
+   grid-template-columns:repeat(1,1fr) ;
+   grid-template-rows:80px 200px 200px 200px 200px 200px ;
+  
+   grid-template-areas: 
+   "nav"
+   "left"
+   "left"
+   "box1"
+   "box2"
+   "box3";
+   
+ }
+
+
+ }
+
+  </style>
+</head>
+<body>
+  
+  
+  <div id="big">
+
+      <div id="nav">Navigation</div>
+      <div>left box</div>
+      <div> right Box 1</div>
+      <div> right Box 2</div>
+      <div> right Box 3</div>
+
+  </div>
+    
+</body>
+</html>

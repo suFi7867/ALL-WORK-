@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #inv{
+            display: grid;
+            border: 1px solid red;
+            width: 80%;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(5,400px);
+            gap: 20px;
+            margin: auto;
+        }
+
+        #inv > div{
+            border: 1px solid red;
+        }
+
+
+
+
+        /* medium screen */
+        @media all  and (min-width:480px) and (max-width:720px){
+
+            #inv{
+            width: 80%;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(7,400px);
+            }
+
+            
+
+
+        }
+
+        /* small screen */
+        @media all  and (min-width:320px) and (max-width:479px){
+
+            #inv{
+            width: 100%;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(10,400px);
+            }  
+
+        }
+
+
+
+    </style>
+
+
+
+</head>
+<body>
+
+    <div id="inv">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+
+    
+</body>
+</html>

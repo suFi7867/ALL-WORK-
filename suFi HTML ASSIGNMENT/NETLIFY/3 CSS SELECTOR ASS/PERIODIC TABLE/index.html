@@ -17,24 +17,27 @@
         }
         #PARENT{
 
-            border: 1px solid red;
-            width: 1000px;
+            border: 1px solid transparent;
+            width: 950px;
             margin: auto; display: flex;
             justify-content: space-between;
 
         }
 
-        /* #PARENT > div {
-            border: 1px solid red;
-            margin: auto;
-           
-        } */
-
         #FIRST{
+           
             display: grid; 
             grid-template-columns: repeat(3,1fr);
             grid-template-rows: repeat(7,1fr);
             gap: 10px; 
+            grid-template-areas: 
+            "first tr1 tr2"
+            "g1 p1 tr3"
+            "g2 p2 tr4"
+            "g3 p3 tr5"
+            "g4 p4 tr6"
+            "g5 p5 l1"
+            "g6 p6 l2";
            
             
            
@@ -42,15 +45,113 @@
 
         #FIRST>div{
             padding: 20px;
-            background-color: rgb(9, 146, 111);  
             border: 1px solid rgb(29, 29, 29);
         }
+
+        #FIRST>div:nth-child(1){
+            background-color: red;
+            grid-area: first;
+        }
+
+        #FIRST>div:nth-child(2){
+            background-color: transparent;
+            grid-area: tr1;
+            border-color: transparent;
+        }
+        #FIRST>div:nth-child(3){
+            background-color: transparent;
+            grid-area: tr2;
+            border-color: transparent;
+        }
+        #FIRST>div:nth-child(4){
+            background-color: transparent;
+            grid-area: tr3;
+            border-color: transparent;
+        }
+        #FIRST>div:nth-child(5){
+            background-color: transparent;
+            grid-area: tr4;
+            border-color: transparent;
+        }
+        #FIRST>div:nth-child(6){
+            background-color: transparent;
+            grid-area: tr5;
+            border-color: transparent;
+        }
+        #FIRST>div:nth-child(7){
+            background-color: transparent;
+            grid-area: tr6;
+            border-color: transparent;
+        }
+
+        #FIRST>div:nth-child(8){
+            background-color: #89a02c ;
+            grid-area: g1;
+        }
+        #FIRST>div:nth-child(9){
+            background-color: #89a02c ;
+            grid-area: g2;
+        }
+        #FIRST>div:nth-child(10){
+            background-color: #89a02c ;
+            grid-area: g3;
+        }
+        #FIRST>div:nth-child(11){
+            background-color: #89a02c ;
+            grid-area: g4;
+        }
+        #FIRST>div:nth-child(12){
+            background-color: #89a02c ;
+            grid-area: g5;
+        }
+        #FIRST>div:nth-child(13){
+            background-color: #89a02c ;
+            grid-area: g6;
+        }
+
+        #FIRST>div:nth-child(14){
+            background-color: #fd5555 ;
+            grid-area: p1;
+        }
+        #FIRST>div:nth-child(15){
+            background-color: #fd5555 ;
+            grid-area: p2;
+        }
+        #FIRST>div:nth-child(16){
+            background-color: #fd5555 ;
+            grid-area: p3;
+        }
+        #FIRST>div:nth-child(17){
+            background-color: #fd5555 ;
+            grid-area: p4;
+        }
+        #FIRST>div:nth-child(18){
+            background-color: #fd5555 ;
+            grid-area: p5;
+        }
+        #FIRST>div:nth-child(19){
+            background-color: #fd5555 ;
+            grid-area: p6;
+        }
+
+        #FIRST>div:nth-child(20){
+            background-color: #ffcbcb ;
+            grid-area: l1;
+            border: 3px solid;
+        }
+        #FIRST>div:nth-child(21){
+            background-color: #ffcbcb ;
+            grid-area: l2;
+            border: 3px solid;
+        }
+
+
 
         #SECOND{
             
             display: flex; 
             flex-direction: column;
-            border: 1px solid red;
+            border: 1px solid transparent;
            justify-content: space-between;
            
         }
@@ -66,7 +167,7 @@
         }
         
         #sec_2{
-            border: 1px solid red;
+            border: 1px solid transparent;
             display: grid; 
             grid-template-columns: repeat(9,1fr);
             grid-template-rows: repeat(4,1fr);
@@ -76,16 +177,27 @@
 
         #sec_2>div{
             padding: 20px;
-            background-color: rgb(155, 71, 163); 
+            background-color: rgb(46, 15, 158); 
             border: 1px solid rgb(29, 29, 29);
         }
 
 
         #THIRD{
+            border: 1px solid transparent;
             display: grid; 
-            grid-template-columns: repeat(7,1fr);
-            grid-template-rows: repeat(6,1fr);
+            grid-template-columns: repeat(6,1fr);
+            grid-template-rows: repeat(7,1fr);
             gap: 10px;
+            grid-template-areas: 
+            "tr1 tr2 tr3 tr4 tr5 y1"
+             "P1 g1 g2 g3 p1 y2"
+            "O1 P2 g4 g5 p2 y3"
+            "O2 P3 P4 g6 p3 y4"
+            "O3 O5 P5 P6 p4 y5"
+            "O4 O6 O7 P7 p5 y6"
+            "L1 L2 L3 L4 L5 L6";
+
+
 
         }
 
@@ -94,6 +206,187 @@
             background-color: rgb(109, 216, 140); 
             border: 1px solid rgb(29, 29, 29);
         }
+
+        #THIRD>div:nth-child(1){
+            background-color: transparent;
+            grid-area: tr1;
+            border-color: transparent;
+        }
+        #THIRD>div:nth-child(2){
+            background-color: transparent;
+            grid-area: tr1;
+            border-color: transparent;
+        }
+        #THIRD>div:nth-child(3){
+            background-color: transparent;
+            grid-area: tr1;
+            border-color: transparent;
+        }
+        #THIRD>div:nth-child(4){
+            background-color: transparent;
+            grid-area: tr1;
+            border-color: transparent;
+        }
+        #THIRD>div:nth-child(5){
+            background-color: transparent;
+            grid-area: tr1;
+            border-color: transparent;
+        }
+
+        #THIRD>div:nth-child(6){
+            background-color: #e4d504 ;
+            grid-area: y1;
+        }
+        #THIRD>div:nth-child(7){
+            background-color: #e4d504 ;
+            grid-area: y2;
+        }
+        #THIRD>div:nth-child(8){
+            background-color: #e4d504 ;
+            grid-area: y3;
+        }
+        #THIRD>div:nth-child(9){
+            background-color: #e4d504 ;
+            grid-area: y4;
+        }
+        #THIRD>div:nth-child(10){
+            background-color: #e4d504 ;
+            grid-area: y5;
+        }
+        #THIRD>div:nth-child(11){
+            background-color: #e4d504 ;
+            grid-area: y6;
+        }
+
+        #THIRD>div:nth-child(12){
+            background-color: #0dc6ff ;
+            grid-area: p1;
+        }
+        #THIRD>div:nth-child(13){
+            background-color: #0dc6ff ;
+            grid-area: p2;
+        }
+        #THIRD>div:nth-child(14){
+            background-color: #0dc6ff ;
+            grid-area: p3;
+        }
+        #THIRD>div:nth-child(15){
+            background-color: #0dc6ff ;
+            grid-area: p4;
+        }
+        #THIRD>div:nth-child(16){
+            background-color: #0dc6ff ;
+            grid-area: p5;
+        }
+
+        #THIRD>div:nth-child(17){
+            background-color: #066415 ;
+            grid-area: g1;
+        }
+        #THIRD>div:nth-child(18){
+            background-color: #066415 ;
+            grid-area: g2;
+        }
+        #THIRD>div:nth-child(19){
+            background-color: #066415 ;
+            grid-area: g3;
+        }
+        #THIRD>div:nth-child(20){
+            background-color: #066415 ;
+            grid-area: g4;
+        }
+        #THIRD>div:nth-child(21){
+            background-color: #066415 ;
+            grid-area: g5;
+        }
+        #THIRD>div:nth-child(22){
+            background-color: #066415 ;
+            grid-area: g6;
+        }
+
+        #THIRD>div:nth-child(23){
+            background-color: #443636 ;
+            grid-area: L1;
+        }
+        #THIRD>div:nth-child(24){
+            background-color: #443636 ;
+            grid-area: L2;
+        }
+        #THIRD>div:nth-child(25){
+            background-color: #443636 ;
+            grid-area: L3;
+        }
+        #THIRD>div:nth-child(26){
+            background-color: #443636 ;
+            grid-area: L4;
+        }
+        #THIRD>div:nth-child(27){
+            background-color: #443636 ;
+            grid-area: L5;
+        }
+        #THIRD>div:nth-child(28){
+            background-color: #443636 ;
+            grid-area: L6;
+        }
+
+        #THIRD>div:nth-child(29){
+            background-color: #ff7d32 ;
+            grid-area: O1;
+        }
+        #THIRD>div:nth-child(30){
+            background-color: #ff7d32 ;
+            grid-area: O2;
+        }
+        #THIRD>div:nth-child(31){
+            background-color: #ff7d32 ;
+            grid-area: O3;
+        }
+        #THIRD>div:nth-child(32){
+            background-color: #ff7d32 ;
+            grid-area: O4;
+        }
+        #THIRD>div:nth-child(33){
+            background-color: #ff7d32 ;
+            grid-area: O5;
+        }
+        #THIRD>div:nth-child(34){
+            background-color: #ff7d32 ;
+            grid-area: O6;
+        }
+        #THIRD>div:nth-child(35){
+            background-color: #ff7d32 ;
+            grid-area: O7;
+        }
+
+        #THIRD>div:nth-child(36){
+            background-color: #480d69 ;
+            grid-area: P1;
+        }
+        #THIRD>div:nth-child(37){
+            background-color: #480d69 ;
+            grid-area: P2;
+        }
+        #THIRD>div:nth-child(38){
+            background-color: #480d69 ;
+            grid-area: P3;
+        }
+        #THIRD>div:nth-child(39){
+            background-color: #480d69 ;
+            grid-area: P4;
+        }
+        #THIRD>div:nth-child(40){
+            background-color: #480d69 ;
+            grid-area: P5;
+        }
+        #THIRD>div:nth-child(41){
+            background-color: #480d69 ;
+            grid-area: P6;
+        }
+        #THIRD>div:nth-child(42){
+            background-color: #480d69 ;
+            grid-area: P7;
+        }
+
 
         #last{
 
@@ -109,8 +402,8 @@
 
         #last > div{
         padding: 15px;
-           border: 1px solid rgb(29, 29, 29);
-        background-color: rgb(16, 53, 19);
+           border: 1px solid rgb(87, 87, 87);
+        background-color: rgb(59, 149, 66);
 
         }
 
@@ -122,23 +415,6 @@
             text-align:left;
             margin-top: -14px;
         }
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-
 
 
 

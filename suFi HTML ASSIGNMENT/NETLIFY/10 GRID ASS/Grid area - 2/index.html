@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIRD AREA 2</title>
+    <style>
+
+        #MHR{
+          background-color: rgb(185, 250, 101);
+           display: grid;
+           grid-template-columns: repeat(4,150px);
+           grid-template-rows: repeat(2,100px);
+           grid-template-areas: 
+           "A1 A1 B1 E1"
+           "C1 D1 B1 E1";
+         
+           gap: 10px;
+           justify-content: center;
+        }
+
+        #MHR > div{
+            display: flex;
+
+            background-color: rgb(0, 102, 255);
+            color: white;  
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: bolder;
+            font-size:xx-large;
+            border-radius: 10px;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        #MHR > div:nth-child(1){
+            background-color: rgb(24, 55, 210);
+            grid-area: A1
+        }
+
+        #MHR > div:nth-child(2){
+            background-color: rgb(119, 13, 211);
+            grid-area: B1
+        }
+
+        #MHR > div:nth-child(3){
+            background-color: rgb(195, 42, 0);
+            grid-area: C1
+        }
+
+        #MHR > div:nth-child(4){
+            background-color: rgb(198, 0, 168);
+            grid-area: D1
+        }
+
+        #MHR > div:nth-child(5){
+            background-color: rgb(0, 96, 123);
+            grid-area: E1
+        }
+
+        
+
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <div id="MHR">
+
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+
+
+
+    </div>
+   
+
+    
+
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDY LAB</title>
+    <style>
+        #NAV{
+            border: 0px solid transparent; 
+            display: flex;
+            justify-content: space-around;
+            margin: auto;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.15) 0px 3px 6px;
+            
+
+        }
+
+        #first{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid transparent;
+            font-family: sans-serif;
+            background-color: orange;
+            color: rgb(81, 40, 3);
+            padding: 0px 35px;
+            
+        }
+        #second{
+            border: 1px solid transparent;
+            display: flex;  
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            color: rgb(52, 52, 52);
+            font-family: sans-serif;
+            font-weight: bolder;
+        }
+        #second > p { 
+            padding: 0px 35px;   
+        }
+        #second > p:hover{
+            color: rgb(17, 53, 181);
+        }
+
+        #DOWN{
+            display: flex;
+            border: 1px transparent ;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            margin-top: 40px;
+            width: 70%;
+        }
+
+        #D1{
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            border: 1px transparent;
+            width: 50%;
+            padding: 20px 20px;
+        }
+
+        #D1 > div{
+            display: flex;
+        }
+
+        
+        #OK{
+            width: 40%; height: 50%;
+        }
+
+        #D2{
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,1fr);
+            text-align: left;
+            border: 1px transparent;
+            width: 40%; 
+            gap: 20px;
+        }
+
+        #D2 > div {
+            border: 1px transparent;  
+            padding: 20px 20px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.15) 0px 3px 6px;
+        }
+
+        #D2 > div > img{
+            width: 140px;  height: 100px;
+        } 
+
+        p{
+            font-family: sans-serif;
+        }
+
+        #D1 > p{
+            color: grey;
+            
+        }
+
+        #D1 > p:nth-child(1){
+            color: blue;
+        }
+
+        #D1 > div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        #D1 > h1 {
+            font-family: sans-serif;
+            color: gray;
+            width: 60%;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+  <!-- first part -->
+    <div id="NAV">
+        <!-- first rec -->
+        <div id="first"> 
+            <h1>MHR </h1>
+         </div>
+         <!-- first rec -->
+        <div id="second"> 
+        <p>HOME</p>
+        <p>ABOUT</p>
+        <p>COURSE</p>
+        <p>INSTRUCTOR</p>
+        <p>BLOG</p>
+        <p>CONTACT</p>
+     </div>
+    </div>
+
+
+    <!-- Second part -->
+    <div id="DOWN">
+        
+        <!-- down first -->
+        <div id="D1">
+            <p>WELCOME TO STUDYLAB</p>
+            <h1>We Are suFi Lab An Online Learning Center</h1>
+            <p>Asmall river named Duden flows by their place and supplies it
+                with the necessary regelialia.It isaparadisematic country,in
+                which roasted parts of sentences fly into your mouth.</p>
+            <p>Far far away,behind the word mountains,far from the
+                countries Vokalia and Consonantia,there live the blind texts.
+                Separated they live in Bookmarksgrove right at the coast of the
+                Semantics,alarge language ocean.</p>
+            <div >
+                <img id="OK" src="https://t3.ftcdn.net/jpg/04/41/38/08/360_F_441380842_vvnXfQ4wvz6zm6zZ1pkg06SV33lD6K1O.jpg" alt="Error">
+                <h3>Learn anything from Study Lab, Watch Video</h3>
+            </div>    
+        </div>
+
+         <!-- down second -->
+        <div id="D2">
+
+           <!-- 1 -->
+            <div>
+                <img src="https://t3.ftcdn.net/jpg/04/41/38/08/360_F_441380842_vvnXfQ4wvz6zm6zZ1pkg06SV33lD6K1O.jpg" alt="">
+                <h3>Top Qulity Content</h3>
+                <p>A Small River Named Duden Flows by Thier place and spplies</p>
+            </div>
+            <!-- 2 -->
+            <div>
+                <img src="https://t3.ftcdn.net/jpg/04/41/38/08/360_F_441380842_vvnXfQ4wvz6zm6zZ1pkg06SV33lD6K1O.jpg" alt="">
+                <h3>Top Qulity Content</h3>
+                <p>A Small River Named Duden Flows by Thier place and spplies</p>
+            </div>
+            <!-- 3 -->
+            <div>
+                <img src="https://t3.ftcdn.net/jpg/04/41/38/08/360_F_441380842_vvnXfQ4wvz6zm6zZ1pkg06SV33lD6K1O.jpg" alt="">
+                <h3>Top Qulity Content</h3>
+                <p>A Small River Named Duden Flows by Thier place and spplies</p>
+            </div>
+            <!-- 4 -->
+            <div>
+                <img src="https://t3.ftcdn.net/jpg/04/41/38/08/360_F_441380842_vvnXfQ4wvz6zm6zZ1pkg06SV33lD6K1O.jpg" alt="">
+                <h3>Top Qulity Content</h3>
+                <p>A Small River Named Duden Flows by Thier place and spplies</p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+   
+
+
+    
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="Para">I am para</p>
+    <div id="box">I am Box</div>
+    <h1  id="H">I am Heading</h1>
+</body>
+</html>
+
+<script>
+
+    // to access whole html
+    let X = document.getElementById("Para")
+    console.log(X)
+
+    let s = document.getElementById("box")
+    console.log(s)
+
+    let q = document.getElementById("H")
+    console.log(q)
+
+     // to access inner text
+     let g = document.getElementById("Para").innerText
+    console.log(g)
+
+    let p = document.getElementById("box").innerText
+    console.log(p)
+
+    let qe = document.getElementById("H").textContent
+    console.log(qe)
+
+
+
+</script>

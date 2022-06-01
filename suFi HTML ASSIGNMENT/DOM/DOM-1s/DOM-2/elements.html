@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1 id="masai">Masai School</h1>
+    <h2 class="sufi">Sufiyan Shaikh</h2>
+    <p>I am Para</p>
+    <p>I am Para</p>
+    <h2 class="sufi">Sufiyan Shaikh</h2>
+    <h1 >Masai School</h1>
+    <h1 >Masai School</h1>
+    <p>I am Para</p>
+
+    
+</body>
+</html>
+
+<script>
+
+//   getElementById("")
+let X = document.getElementById("masai")
+X.style.backgroundColor = "blue"
+X.style.color = "white"
+
+//   getElementsByClassName("")
+let Y = document.getElementsByClassName("sufi")
+
+for(let i=0; i<Y.length ; i++){
+    Y[i].style.color = "red"
+}
+
+//   getElementsByTagName("")
+let Z = document.getElementsByTagName("p")
+
+for(let i=0; i<Z.length ; i++){
+    Z[i].style.color = "green"
+}
+
+
+//query selector
+// one select only
+
+let O = document.querySelector("p")
+O.style.backgroundColor = "grey"
+
+
+//query selector
+// one select only
+let Q = document.querySelectorAll(".sufi")
+Q.style.backgroundColor = "red"
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+

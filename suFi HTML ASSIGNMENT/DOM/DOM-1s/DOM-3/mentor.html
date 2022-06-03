@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            width: 80%;
+            margin: auto;
+        }
+
+        #con{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(2,auto);
+            gap : 20px;
+           
+        }
+
+        h2 + img{
+            display: grid;
+            width: 100px;
+            width: 100px;
+            margin: auto;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div id="con">
+
+    </div>
+
+    
+</body>
+</html>
+
+
+<script>
+
+
+let mentors = [{image:"https://masai-website-images.s3.ap-south-1.amazonaws.com/kanishk_aman_247ff1ba31.jpg" , name:"Amol Holani", logo: "https://masai-website-images.s3.ap-south-1.amazonaws.com/flipkart_e9b84a5d5e.svg" },
+{image:"https://masai-website-images.s3.ap-south-1.amazonaws.com/kanishk_aman_247ff1ba31.jpg" , name:"Amol Holani", logo: "https://masai-website-images.s3.ap-south-1.amazonaws.com/flipkart_e9b84a5d5e.svg" },
+{image:"https://masai-website-images.s3.ap-south-1.amazonaws.com/kanishk_aman_247ff1ba31.jpg" , name:"Amol Holani", logo: "https://masai-website-images.s3.ap-south-1.amazonaws.com/flipkart_e9b84a5d5e.svg" },
+{image:"https://masai-website-images.s3.ap-south-1.amazonaws.com/kanishk_aman_247ff1ba31.jpg" , name:"Amol Holani", logo: "https://masai-website-images.s3.ap-south-1.amazonaws.com/flipkart_e9b84a5d5e.svg" },
+{image:"https://masai-website-images.s3.ap-south-1.amazonaws.com/kanishk_aman_247ff1ba31.jpg" , name:"Amol Holani", logo: "https://masai-website-images.s3.ap-south-1.amazonaws.com/flipkart_e9b84a5d5e.svg" },
+{image:"https://masai-website-images.s3.ap-south-1.amazonaws.com/kanishk_aman_247ff1ba31.jpg" , name:"Amol Holani", logo: "https://masai-website-images.s3.ap-south-1.amazonaws.com/flipkart_e9b84a5d5e.svg" },
+{image:"https://masai-website-images.s3.ap-south-1.amazonaws.com/kanishk_aman_247ff1ba31.jpg" , name:"Amol Holani", logo: "https://masai-website-images.s3.ap-south-1.amazonaws.com/flipkart_e9b84a5d5e.svg" },
+{image:"https://masai-website-images.s3.ap-south-1.amazonaws.com/kanishk_aman_247ff1ba31.jpg" , name:"Amol Holani", logo: "https://masai-website-images.s3.ap-south-1.amazonaws.com/flipkart_e9b84a5d5e.svg" },]
+
+mentors.forEach(function(elem){
+    //creating child boxes
+    let box = document.createElement("div");
+    
+    //create image element 
+    let avatar = document.createElement("img")
+    avatar.setAttribute("src",elem.image);
+   
+
+    //create h2 element 
+    let MName = document.createElement("h2")
+    MName.innerText = elem.name;
+
+      //create image logo element 
+      let Clogo = document.createElement("img")
+      Clogo.setAttribute("src",elem.logo);
+   
+
+
+   /// passing 
+    box.append(avatar,MName,Clogo);
+
+
+    document.querySelector("#con").append(box)
+
+})
+
+
+
+</script>

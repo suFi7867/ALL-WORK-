@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+
+    let btnARR = [
+        { name: "Primary", bgcolor: "blue", color: "white" },
+        { name: "Secondary", bgcolor: "grey", color: "white" },
+        { name: "Success", bgcolor: "green", color: "white" },
+        { name: "Danger", bgcolor: "red", color: "Dark" },
+        { name: "Warning", bgcolor: "yellow", color: "white" },
+        { name: "Info", bgcolor: "cyan", color: "white" },
+        { name: "Light", bgcolor: "white", color: "white" },
+        { name: "Dark", bgcolor: "black", color: "white" },
+        { name: "Link", bgcolor: "white", color: "white" },
+
+    ];
+
+    for (let i = 0; i < btnARR.length; i++) {
+
+        let btn = document.createElement("button")
+
+        btn.innerText = btnARR[i].name;
+        btn.style.backgroundColor = btnARR[i].bgcolor;
+        btn.style.color = btnARR[i].color;
+
+        document.querySelector("body").append(btn);
+
+    }
+
+
+
+    btnARR.forEach(function (element, index, arr) {
+        let btn = document.createElement("button")
+
+        btn.innerText = element.name
+        btn.style.backgroundColor = element.bgcolor
+        btn.style.color = element.color
+
+        document.querySelector("body").append(btn);
+
+    })
+
+
+</script>

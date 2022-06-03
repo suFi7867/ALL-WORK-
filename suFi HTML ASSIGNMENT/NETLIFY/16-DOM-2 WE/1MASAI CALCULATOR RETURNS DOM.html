@@ -4,9 +4,113 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Masai Calculator</title>
+    <style>
+ #container{
+     width: 80%;
+     height: 400px;
+     margin: auto;
+     box-shadow: rgba(97, 94, 94, 0.2) 0px 2px 8px 0px;
+
+     border: 1px solid transparent; 
+     padding: 10px;
+
+ }
+ #screen{
+     width: 80%;
+     /* border: 2px solid red; */
+     margin: auto;
+     height: 35px;
+     
+     margin-top: 30px;
+     box-shadow: rgba(97, 94, 94, 0.2) 0px 2px 8px 0px;
+     font-size: 30px;
+     text-align: center;
+ }
+
+  #keyboard{
+          width: 80%;
+          /* border:2px solid rgb(39, 235, 14); */
+          height: 70%;
+          margin: auto;
+          margin-top: 20px;
+          display: grid;
+          grid-template-columns:repeat(4,1fr) ;
+          grid-template-rows:repeat(4,70px) ;
+           gap:10px;
+           
+
+  }
+  #keyboard>div{
+      /* border: 1px solid red; */
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      border-radius: 20px;
+      
+  }
+  #keyboard>div:hover{
+      background-color:pink
+  }
+  
+      .black{background-color: black;
+        color: white;}
+        .red{background-color: red;}
+        h1{text-align: center;}
+  
+    </style>
 </head>
 <body>
+    <h1>Masai Calculator</h1>
+    <div id="container">
+        <div id="screen"></div>
+        <div id="keyboard">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div class="black">+</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div class="black">-</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div class="black">x</div>
+            <div class="red">c</div>
+            <div>0</div>
+            <div class="black">=</div>
+            <div class="black">/</div>
+        </div>
     
+    </div>
+
 </body>
 </html>
+
+<script>
+    let bag="";
+let keys=document.querySelectorAll("#keyboard>div")
+
+for(let i=0;i<keys.length;i++){
+    keys[i].addEventListener("click",Mycalc)
+}
+function Mycalc(event){
+    let targetNumber=event.target.innerText
+
+    if(targetNumber=="c"){
+        bag=""
+        document.querySelector("#screen").innerText="";
+    }
+    else if(targetNumber=="="){
+        document.querySelector("#screen").innerText=eval(bag);
+
+    }
+    else {bag+=targetNumber ; document.querySelector("#screen").innerText=bag
+}
+    
+    // console.log(bag)
+//   document.querySelector("#screen").innerText=bag
+}
+</script>

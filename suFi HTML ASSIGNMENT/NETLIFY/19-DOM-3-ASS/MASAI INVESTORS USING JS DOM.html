@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+
+
+#con{
+           
+           display: grid;
+           width: 80%;
+           grid-template-columns: repeat(4,1fr);
+           grid-template-rows: repeat(5,1fr);
+           gap: 15px;
+           margin: auto;
+           margin-top: 50px;
+           justify-content: center;
+           align-items: center;
+       }
+
+       #con > div{
+           
+           border-radius: 5px;
+           box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+           background-color: white;
+
+           text-align: center;
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           
+       }
+
+       #con>div>img{
+       border-radius: 5px 5px 0px 0px;
+          width: 100%;
+         
+       }
+
+       #con>div>img +p {
+           font-weight: bolder; 
+           font-size: larger;
+          margin: 10px;
+       }
+
+       #con>div>img +p+ p {
+          margin: -10px;
+       }
+
+
+
+       #con>div>img +p + p + img {
+           width: 60%; 
+           margin: auto;
+           
+       }
+
+       #con > div:hover{
+           box-shadow: rgba(0, 0, 0, 0.15) 6px 3px 5px ;
+       }
+
+
+        /* medium screen */
+        @media all  and (min-width:480px) and (max-width:720px){     
+            #con{
+            width: 80%;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(4,1fr);
+            }
+
+        }
+
+        /* small screen */
+        @media all  and (min-width:320px) and (max-width:479px){
+            #con{
+            width: 100%;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(6,1fr);
+            }  
+        }
+
+
+    </style>
+
+
+
+</head>
+<body>
+
+    <div id="con">
+
+    </div>
+
+
+   
+    
+</body>
+</html>
+
+<script>
+  
+  let investors =[
+    {name:"Vijay Shekhar Sharma",
+    role:"Founder & CEO",
+    image:"https://masai-website-images.s3.ap-south-1.amazonaws.com/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg",
+    companyLogo:"https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg"},
+    {name:"Vijay Shekhar Sharma",
+    role:"Founder & CEO",
+    image:"https://masai-website-images.s3.ap-south-1.amazonaws.com/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg",
+    companyLogo:"https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg"},
+    
+    {name:"Vijay Shekhar Sharma",
+    role:"Founder & CEO",
+    image:"https://masai-website-images.s3.ap-south-1.amazonaws.com/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg",
+    companyLogo:"https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg"},
+    
+    {name:"Vijay Shekhar Sharma",
+    role:"Founder & CEO",
+    image:"https://masai-website-images.s3.ap-south-1.amazonaws.com/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg",
+    companyLogo:"https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg"},
+    
+    {name:"Vijay Shekhar Sharma",
+    role:"Founder & CEO",
+    image:"https://masai-website-images.s3.ap-south-1.amazonaws.com/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg",
+    companyLogo:"https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg"},
+    
+    {name:"Vijay Shekhar Sharma",
+    role:"Founder & CEO",
+    image:"https://masai-website-images.s3.ap-south-1.amazonaws.com/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg",
+    companyLogo:"https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg"},
+    
+    {name:"Vijay Shekhar Sharma",
+    role:"Founder & CEO",
+    image:"https://masai-website-images.s3.ap-south-1.amazonaws.com/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg",
+    companyLogo:"https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg"},
+    
+    {name:"Vijay Shekhar Sharma",
+    role:"Founder & CEO",
+    image:"https://masai-website-images.s3.ap-south-1.amazonaws.com/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg",
+    companyLogo:"https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg"},
+    
+    {name:"Vijay Shekhar Sharma",
+    role:"Founder & CEO",
+    image:"https://masai-website-images.s3.ap-south-1.amazonaws.com/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg",
+    companyLogo:"https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg"},
+    
+    {name:"Vijay Shekhar Sharma",
+    role:"Founder & CEO",
+    image:"https://masai-website-images.s3.ap-south-1.amazonaws.com/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg",
+    companyLogo:"https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg"},
+    
+    {name:"Vijay Shekhar Sharma",
+    role:"Founder & CEO",
+    image:"https://masai-website-images.s3.ap-south-1.amazonaws.com/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg",
+    companyLogo:"https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg"},
+    
+    {name:"Vijay Shekhar Sharma",
+    role:"Founder & CEO",
+    image:"https://masai-website-images.s3.ap-south-1.amazonaws.com/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg",
+    companyLogo:"https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg"}
+ 
+    ]
+ 
+  investors.forEach(function(el){
+  
+    // child boxes 
+    let box = document.createElement("div")
+
+    // create image element
+    let pic =   document.createElement("img")
+    pic.setAttribute("src",el.image)
+
+
+     // create h2 element
+    let Name = document.createElement("h2")
+    Name.innerText = el.name
+
+     // create p element
+    let para = document.createElement("p")
+    para.innerText = el.role
+
+    // create LOGO 
+    let logo = document.createElement("img")
+    logo.setAttribute("src",el.companyLogo)
+
+
+    // passing  pic , name , para , logo 
+    box.append(pic,Name,para,logo)
+
+    // passing  div box in body
+    document.querySelector("#con").append(box)
+
+
+  })
+  
+
+
+</script>

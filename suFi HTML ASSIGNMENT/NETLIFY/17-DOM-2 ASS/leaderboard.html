@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+
+        #flex{
+            display: flex;
+            width: 500px;
+            border: 1px transparent;
+            margin: auto;
+            justify-content: space-between;
+            margin-top: 150px;
+        }
+
+        #flex>div{
+            display: flex;
+            flex-direction: column;
+            border: 0px solid;   
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: xx-large;  
+        }
+
+        #flex>div{
+           
+            border: 1px solid;
+            height: 40px; width: 100px;
+            padding: 30px;
+            margin: auto;
+            justify-content: center;
+            align-content: center; 
+            font-size: 40px;
+            
+            text-align: center;
+            justify-content: center;
+            align-content: center;
+        }
+
+        #flex>div{
+            background-color: red;
+        }
+
+        #flex>div~div{
+            background-color: green;
+        }
+       
+        #flex>div>p{
+            margin-top: 10px;
+            margin: auto;
+        }
+
+
+        #main{
+          
+      width: 500px;
+      border: 1px transparent;
+            margin: auto;
+            margin-top: 20px;
+            
+
+ 
+        }
+
+        #main>p{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 40px;
+            text-align: center;
+            margin-top: -0px;
+            
+        }  
+
+
+        #main>div{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           
+        }     
+        
+        #display{
+            display: grid;
+            width: 70%;
+            border: 1px solid;
+            height: 120px;
+            margin: auto;
+            background-color: rgb(175, 175, 175);
+           text-align: center;
+           align-content: center;
+            border-radius: 10px;
+            font-size: 70px;
+            margin-top: -30px;
+        }
+
+        #keys{
+
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(4,1fr);
+            width: 70%;
+            border: 1px solid transparent;
+            margin: auto;
+            gap: 40px;
+            margin-top: 40px;
+            grid-template-areas: none;
+            font-size: 30px;
+        }
+
+        #keys>div{
+            display: grid;
+            border: 1px solid;
+            height: 70px; 
+            
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+            border-radius: 10px;
+               
+        }
+
+
+
+        #keys>div:nth-child(1){
+            background-color: green;
+          
+        }
+        #keys>div:nth-child(2){
+            background-color: orange;
+           
+        }
+        #keys>div:nth-child(3){
+            background-color: green;
+           
+        }
+        #keys>div:nth-child(4){
+            background-color: orange;
+        
+        }
+        #keys>div:nth-child(5){
+            background-color: orange;
+            
+        }
+        #keys>div:nth-child(6){
+            background-color: orange;
+           
+        }
+        #keys>div:nth-child(7){
+            background-color: green;
+           
+        }
+        #keys>div:nth-child(8){
+            background-color: orange;
+           
+        }
+        #keys>div:nth-child(9){
+            background-color: green;
+           
+        }
+
+        #keys>div:nth-child(11){
+            background-color: purple;
+        }
+
+        #keys>div:nth-child(14){
+            background-color: black;
+            color: white;
+        }
+
+
+
+
+
+    </style>
+
+</head>
+
+<body>
+  
+
+        <div id="flex">
+
+       
+                <div>43</div>
+                <p>MIN</p>  
+
+      
+                <div>2019</div>
+                <p>MAX</p>  
+    
+
+
+       </div>
+
+
+       <div id="main">
+         <p>SCORE</p>
+         <div id="display">#</div>
+
+         <div id="keys">
+             <div>1</div>
+             <div>2</div>
+             <div>3</div>
+             <div>4</div>
+             <div>5</div>
+             <div>6</div>
+             <div>7</div>
+             <div>8</div>
+             <div>9</div>
+             <br>
+             <div>0</div>
+             <br>
+             <br>
+             <div>ENTER</div>
+          
+          
+         </div>
+
+
+
+
+       </div>
+    
+</body>
+</html>
+
+<script>
+
+
+
+let Min = document.querySelector("#flex>div").innerText
+let Max = document.querySelector("#flex>div+p+div").innerText
+
+let key = document.querySelectorAll("#keys>div")
+let bag = "";
+
+
+
+
+for(let i=0; i<key.length; i++){
+    key[i].addEventListener("click" , MinMax)
+}
+
+function MinMax(event){
+  
+    let dis = document.querySelector("#display")
+    
+    if(event.target.innerText == "ENTER"){
+
+        if((+bag)<(+Min)){
+            document.querySelector("#flex>div").innerText=bag
+            dis.innerText=null
+            bag = ""
+            return
+        }else if((+bag)>(+Max)){
+            document.querySelector("#flex>div+p+div").innerText=bag
+            dis.innerText=null
+            bag = ""
+            return
+        }
+    }
+        console.log(event.target.innerText)
+        bag+=event.target.innerText
+        display.innerText = bag
+    
+    }
+
+
+
+
+</script>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <form>
+        <input id="NAME" type="text" placeholder="Name">
+        <input id="AGE" type="text" placeholder="Age">
+        <select id="GENDER"  name="" id="">
+            <option value="">Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Gay">Gay</option>
+        </select>
+        <input id="Email" type="text" placeholder="Email">
+        <input id="MOBILE" type="text" placeholder="Mobile">
+        <input type="submit">
+    </form>
+
+
+
+    
+</body>
+</html>
+
+<script>
+
+document.querySelector("form").addEventListener("submit" , func)
+    
+    
+    function func(event){
+        // console.log("OK") check in console working or not
+         event.preventDefault();
+      
+
+       
+   let nam = document.querySelector("#NAME").value
+   let age = document.querySelector("#AGE").value
+   let gender = document.querySelector("#GENDER").value
+   let email = document.querySelector("#Email").value
+   let mobile = document.querySelector("#MOBILE").value
+
+   let arr = [];  
+   arr.push(nam)
+   arr.push(age)
+   arr.push(gender)
+   arr.push(email)
+   arr.push(mobile)
+
+console.log(arr)
+
+    }
+
+  
+
+     
+
+
+</script>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>BUTTONS</title>
+
+     <style>
+
+        button{
+            padding: 10px 15px; 
+            border-radius: 5px;
+            border-color: transparent;
+            margin-left: 10px;
+        }
+
+
+         
+
+     </style>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+
+    let btnARR = [
+        { name: "Primary", bgcolor: "#027bff", color: "white" },
+        { name: "Secondary", bgcolor: "grey", color: "white" },
+        { name: "Success", bgcolor: "#28a745", color: "white" },
+        { name: "Danger", bgcolor: "#dc3545", color: "Dark" },
+        { name: "Warning", bgcolor: "#ffc009", color: "white" },
+        { name: "Info", bgcolor: "#13a2b8", color: "white" },
+        { name: "Light", bgcolor: "#f8f9fa", color: "Dark" },
+        { name: "Dark", bgcolor: "#333a40", color: "white" },
+        { name: "Link", bgcolor: "#f8f9fa", color: "Dark" },
+
+    ];
+
+    // for (let i = 0; i < btnARR.length; i++) {
+
+    //     let btn = document.createElement("button")
+
+    //     btn.innerText = btnARR[i].name;
+    //     btn.style.backgroundColor = btnARR[i].bgcolor;
+    //     btn.style.color = btnARR[i].color;
+
+    //     document.querySelector("body").append(btn);
+
+    // }
+
+
+
+    // btnARR.map(function (element, index, arr) {
+    //     let btn = document.createElement("button")
+
+    //     btn.innerText = element.name
+    //     btn.style.backgroundColor = element.bgcolor
+    //     btn.style.color = element.color
+
+    //     document.querySelector("body").append(btn);
+
+    // })
+
+    btnARR.forEach(function(element){
+
+        let btn = document.createElement("button")
+
+         btn.innerText = element.name
+         btn.style.backgroundColor = element.bgcolor
+         btn.style.color = element.color
+
+    document.querySelector("body").append(btn);
+
+
+    })
+
+
+</script>

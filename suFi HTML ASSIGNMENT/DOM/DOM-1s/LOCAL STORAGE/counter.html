@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COUNTER</title>
+    <style>
+         div{
+    margin: auto;
+   
+    text-align: center;
+    border: 1px solid rgb(167, 167, 167);
+  width: 50%;
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    text-align: center;
+    
+    
+}
+
+  button {
+  
+
+  padding: 5px 20px;
+  border-radius: 10px;
+  border-color: red;
+  margin-left: 5px;
+  margin-bottom: 30px;
+  
+  }
+  
+  button:hover {
+  background-color: red;
+  border-color: red;
+  color: white;
+  }
+    </style>
+</head>
+<body>
+    <div>
+
+        <h1></h1>
+        <button>Increament</button>
+        <button>Decreament</button>
+        
+    </div>
+</body>
+</html>
+
+<script>
+
+    let counter = localStorage.getItem("localCOUNT")  || 0
+
+    // instead of this dirictly in console 
+//     if(localStorage.getItem("localCOUNT") == null){
+//        counter = 0 
+//    }else{
+//     counter =  localStorage.getItem("localCOUNT");
+//    }
+
+ 
+
+
+
+    document.querySelector("h1").innerText = counter        ;
+
+
+    ///////////
+
+    document.querySelector("h1+button").addEventListener("click", inc);
+
+    function inc(){
+     counter++
+     document.querySelector("h1").innerText = counter;
+
+     localStorage.setItem("localCOUNT" , counter)
+     
+    }
+
+    ///////////
+
+    document.querySelector("button+button").addEventListener("click", dec);
+
+    function dec(){
+        counter-- 
+        document.querySelector("h1").innerText = counter;     
+        localStorage.setItem("localCOUNT" , counter) 
+    }
+
+
+    
+
+
+  
+
+    
+    
+
+</script>

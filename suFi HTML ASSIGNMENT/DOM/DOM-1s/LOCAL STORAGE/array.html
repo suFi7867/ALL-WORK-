@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+//JSON - UNIVERSAL DATA FORMAT
+    var nums = [1,2,3,4,5,6]
+    
+    
+    localStorage.setItem("arrOFnum", JSON.stringify(nums))
+    
+    let getArr = localStorage.getItem("arrOFnum")
+
+    console.log( getArr)
+
+
+/// stored in local storage in form of ARRAY
+/// USED JASON
+    let names = [ "sufi" , "meher" , "saurabh"]
+
+    localStorage.setItem("arrNames" ,JSON.stringify(names))
+
+
+   
+    
+ 
+ </script>

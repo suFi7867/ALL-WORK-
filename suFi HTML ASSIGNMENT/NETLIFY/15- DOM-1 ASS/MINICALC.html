@@ -5,24 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        div{
+    margin: auto;
+   
+    text-align: center;
+    border: 1px solid rgb(167, 167, 167);
+    width: 50%;
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    
+    
+}
+
+div>input{
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 50px;
+
+}
+div > button {
+  
+margin-top: 20px;
+padding: 5px 20px;
+border-radius: 10px;
+border-color: red;
+margin-left: 5px;
+margin-bottom: 30px;
+
+}
+
+div > button:hover {
+background-color: red;
+border-color: red;
+color: white;
+}
+
+#rec{
+    height: 30px;
+    width: 100%;
+  background-color: rgb(25, 25, 125);
+   margin: auto;
+   margin-top: 30px;
+   margin-bottom: 30px;
+}
+
+#rec2{
+    height: 30px;
+    width: 100%;
+  background-color: rgb(25, 25, 125);
+   margin: auto;
+   margin-top: 30px;
+}
+</style>
 </head>
 
 <body>
 
 
     
-    <input type="number" placeholder="enter 1st num" id="NUM1">
-    <input type="number" placeholder="enter 2nd num" id="NUM2">
+    <div id="rec">   </div>
+    <div>
+        
+        <input type="number" placeholder="enter 1st num" id="NUM1">
+        <input type="number" placeholder="enter 2nd num" id="NUM2">
+    
+        <br>
+        <br>
+    
+        <button onclick="add()">Add</button>
+        <button onclick="sbb()">Substract</button>
+        <button onclick="multi()">Multiply</button>
+        <button onclick="div()">Divide</button>
+    
+        <h1 id="head">OUTPUT</h1>
+ 
+      
+      
+        
+    </div>
+    <div id="rec">   </div>
 
-    <br>
-    <br>
-
-    <button onclick="add()">Add</button>
-    <button onclick="sbb()">Substract</button>
-    <button onclick="multi()">Multiply</button>
-    <button onclick="div()">Divide</button>
-
-    <h1 id="head">OUTPUT</h1>
 
     
 </body>

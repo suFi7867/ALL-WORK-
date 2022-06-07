@@ -2,42 +2,107 @@
 <html>
 <head>
 	<title>Content Manipulation</title>
+	<style>
+		div{
+            margin: auto;
+           
+            text-align: center;
+            border: 1px solid rgb(167, 167, 167);
+            width: 50%;
+            border-radius: 5px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: xx-large;
+			text-align: center;
+			
+            
+        }
+
+        div>input{
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 50px;
+
+        }
+      div > button {
+		  
+        margin-top: 20px;
+        padding: 5px 20px;
+        border-radius: 10px;
+        border-color: red;
+       margin-left: 5px;
+	   margin-bottom: 30px;
+
+      }
+
+       div > button:hover {
+        background-color: red;
+        border-color: red;
+        color: white;
+       }
+
+       #rec{
+            height: 30px;
+            width: 100%;
+          background-color: rgb(25, 25, 125);
+           margin: auto;
+           margin-top: 30px;
+           margin-bottom: 30px;
+        }
+
+        #rec2{
+            height: 30px;
+            width: 100%;
+          background-color: rgb(25, 25, 125);
+           margin: auto;
+           margin-top: 30px;
+        }
+	</style>
 </head>
 <body>
-	<h1 id="firstname">Hello</h1>
-	<div id="lastname">MASAI</div>
-	<p id="fullname">School</p>
 
-	<hr/>
+	<div id="rec">   </div>
+   <div>
 
-	<button onclick="setFirstName()">FIRSTNAME</button>
-	<button onclick="setLastName()">LASTNAME</button>
-	<button onclick="setFullName()">FIRSTNAME NAME</button>
-	<button onclick="resetDefaults()">RESET DEFAULTS</button>
+     
+    
+	   <h1 id="firstname">Hello</h1>
+	   <div id="lastname">MASAI</div>
+	   <p id="fullname">School</p>
+	   
+	   <hr/>
+	   
+	   <button onclick="setFirstName()">FIRSTNAME</button>
+	   <button onclick="setLastName()">LASTNAME</button>
+	   <button onclick="setFullName()">FIRSTNAME NAME</button>
+	   <button onclick="resetDefaults()">RESET DEFAULTS</button>
+	   
+   </div>
+   <div id="rec">   </div>
+   
 	<script type="text/javascript">
 		function setFirstName() {
-            document.getElementById("firstname").textContent = "Sufiyan"
+			document.getElementById("firstname").textContent = "Sufiyan"
 		}
-
+		
 		function setLastName() {
             document.getElementById("lastname").textContent = "Shaikh"
 		}
-
+		
 		function setFullName() {
             document.getElementById("fullname").textContent 
             = "Sufiyan Shaikh"
 		}
-
+		
 		function resetDefaults(){
 			document.getElementById("firstname").textContent = "Hello"
             document.getElementById("lastname").textContent = "MASAI"
             document.getElementById("fullname").textContent 
             = "School"
 		}
-
-     	
-
-
+		
+		
+		
+		
 
 
 
